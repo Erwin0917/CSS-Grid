@@ -1,0 +1,68 @@
+html{
+    font-size: 10px;
+}
+h2{
+    font-size: 2.6rem;
+}
+.container{
+    width: 85%;
+    max-width: 1300px;
+    margin: 40px auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header{
+    border-bottom: 2px solid gray;
+    padding-bottom: 40px;
+    h2{
+        flex: 0 1 100%;
+    }
+    img{
+        border: 4px solid gray;
+        transition: border .1s linear;
+        &:hover{
+            border: 4px solid yellowgreen;
+        }
+    }
+}
+main{
+    display: grid;
+    grid-template-rows:250px 250px;
+    transition: all .3s linear;
+    .col{
+        
+        &-1{
+            background-color: yellow;
+            grid-area: yellow;
+        }
+        &-2{
+            background-color: blue;
+            grid-area: blue;
+        }
+        &-3{
+            background-color: green;
+            grid-area: green;
+        }
+    }
+}
+.grid-1-2-1{
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "yellow blue green"
+    ". blue .";
+}
+.grid-2-1-1{
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+    "blue yellow green"
+    "blue yellow .";
+}
+.grid-1-1-2{
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas:
+    "yellow green blue"
+    ". green blue";
+}

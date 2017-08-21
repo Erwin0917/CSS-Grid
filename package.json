@@ -1,0 +1,29 @@
+{
+  "name": "pogoda2",
+  "version": "1.0.0",
+  "description": "CSS Grid exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erwin0917/CSS-Grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Erwin0917/CSS-Grid/issues"
+  },
+  "homepage": "https://github.com/Erwin0917/CSS-Grid#readme"
+}
